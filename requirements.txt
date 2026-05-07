@@ -1,0 +1,37 @@
+# FinVest Pro — Python Dependencies
+# Fixed for Render deployment (Python 3.11/3.12 compatible)
+# ──────────────────────────────────────────────────────────
+# IMPORTANT: In Render dashboard → Settings → Python Version
+# Set to: 3.11.9  (most stable, all wheels available)
+# ──────────────────────────────────────────────────────────
+
+# ── Web Framework ─────────────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+
+# ── Firebase Admin SDK ────────────────────────────────────
+firebase-admin==6.6.0
+
+# ── Pydantic — MUST use these exact versions ─────────────
+# pydantic-core 2.20+ has pre-built wheels for py3.11/3.12
+pydantic==2.9.2
+pydantic-settings==2.6.1
+pydantic-core==2.23.4
+
+# ── Configuration ─────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── HTTP Client ───────────────────────────────────────────
+httpx==0.28.1
+
+# ── Date/Time ─────────────────────────────────────────────
+python-dateutil==2.9.0.post0
+
+# ── Database ──────────────────────────────────────────────
+sqlalchemy==2.0.36
+
+# ── AI (optional) ─────────────────────────────────────────
+anthropic==0.40.0
+# openai==1.57.0
+
